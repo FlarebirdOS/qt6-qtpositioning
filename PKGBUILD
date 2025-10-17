@@ -1,6 +1,6 @@
 pkgname=qt6-qtpositioning
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Provides access to position, satellite and area monitoring classes"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -23,7 +23,7 @@ makedepends=(
     'qt6-qtserialport'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(5be6095e7e62148362a1cf0fa647236c0b306153aa70e5b767467f84e77e6fbf)
+sha256sums=(fc7fb205cae3e8e0efe2f1b87a5357c018e93bc131bede64c4d851963607a8cd)
 
 build() {
     cd ${pkgname#*-}
